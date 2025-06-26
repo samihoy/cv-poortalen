@@ -1,3 +1,4 @@
+console.log("Running script.js on ABOUT PAGE")
 let keySequence = '';
   const secretCode = '1337';
   const modal = document.getElementById('easterEggModal');
@@ -22,4 +23,18 @@ let keySequence = '';
     if (event.target === modal) {
       modal.style.display = 'none';
     }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const originalImg = "profile%20pic.jpg"; 
+  const egg = document.getElementById("easterEgg");
+
+  if (egg) {
+    egg.addEventListener("click", () => {
+      const isOriginal = egg.src.includes(originalImg);
+      egg.src = isOriginal
+        ? "./images/My alter-ego.jpg"
+        : "./images/profile pic.jpg";
+    });
+  }
 });

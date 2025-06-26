@@ -229,7 +229,8 @@ a{
     display: none;
 
 }
-#project-card1:target{
+#project-card1:target,
+#project-card2:target{
     display: flex;
 
 
@@ -242,4 +243,24 @@ a{
 }
 .easteregg{
     color: black;
+}
+@media print {
+  body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: black;
+  }
+
+  .nav, .downloadbtn, embed {
+    display: none;
+  }
+
+  h1 {
+    font-size: 24pt;
+    margin-top: 2em;
+  }
+
+  .profile {
+    margin-bottom: 2em;
+  }
 }
