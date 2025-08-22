@@ -5,54 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-            <header class="top">
-        <div class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cv.html" class="active">CV</a></li>
-            <li><a href="project.html">project</a></li>
-            <li><a href="contact.html">Contact</a></li>
+  
+<header class="top">
+  <nav class="nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cv.html" class="active" aria-current="page">CV</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="blogg.html">Blogg</a></li>
+    </ul>
+  </nav>
+</header>
 
-
-        </div>
+<main>
+    <section class="resume-content">
         <img src="" alt="">
                 <div class ="profile">
 
                     <a class="downloadbtn" href="./Made upp Resume.pdf">Resume Download</a>
                 </div>
                 <h1>Ressume</h1>
-                <section class="resume-content">
-  <h2>Max Backendson</h2>
-  <p>Age: 36 | Email: max.backendson@example.com | Phone: +46 70 123 4567</p>
 
-  <h3>Professional Summary</h3>
-  <p>Motivated and versatile professional with over a decade of experience...</p>
+    <h2>Max Backendson</h2>
+    <p>Age: 36 | Email: max.backendson@example.com | Phone: +46 70 123 4567</p>
 
-  <h3>Work Experience</h3>
-  <ul>
-    <li><strong>Senior Security Analyst</strong> | NordGuard Security AB | 2009–2023</li>
-    <li><strong>Retail Associate</strong> | CityMart | 2015–2019</li>
-    <li><strong>Consultant</strong> | Strategic Ops | Ongoing</li>
-  </ul>
+    <h3>Professional Summary</h3>
+    <p>Motivated and versatile professional with over a decade of experience...</p>
 
-  <h3>Education</h3>
-  <p>BSc in Business and Security Management | University of Stockholm | 2005–2008</p>
+    <h3>Work Experience</h3>
+    <ul>
+      <li><strong>Senior Security Analyst</strong> | NordGuard Security AB | 2009–2023</li>
+      <li><strong>Retail Associate</strong> | CityMart | 2015–2019</li>
+      <li><strong>Consultant</strong> | Strategic Ops | Ongoing</li>
+    </ul>
 
-  <h3>Key Skills</h3>
-  <ul>
-    <li>Security Operations</li>
-    <li>Team Leadership</li>
-    <li>Retail & Inventory Management</li>
-  </ul>
-</section>
+    <h3>Education</h3>
+      <p>BSc in Business and Security Management | University of Stockholm | 2005–2008</p>
 
-
-            </div>
-        </div>
-
-    </header>
+    <h3>Key Skills</h3>
+      <ul>
+        <li>Security Operations</li>
+        <li>Team Leadership</li>
+        <li>Retail & Inventory Management</li>
+      </ul>
+  </section>
+    </div>
+  </div>
     <div>Aditional information</div>
+            <div class="hidden-modal">
+        <div class="hidden-modal-content">
+            <p>Sådär, Nu är Easter egget korekt, Hotpink Disco Baby! <br>Style stulen från bootstrap, I have no shame : )</p>
+            <button class="close-popup-button">Close</button>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+
+  <div class="contact">
+    <h3 class="title">contact</h3>
+      <div class="contact_info">
+          <p class="description easteregg">Porthansvägen 12</p>
+          <p class="description">0707254421</p>
+          <p class="description">brormaximillianlundberg@protonmail.com</p>
+      </div>
+  </div>
+</footer>
+    
 </body>
 </html>

@@ -8,18 +8,19 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-        <header class="top">
-        <div class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="project.html">project</a></li>
-            <li><a href="contact.html">Contact</a></li>
+<header class="top">
+  <nav class="nav" aria-label="Main navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="blogg.html">Blogg</a></li>
+    </ul>
+  </nav>
+</header>
 
-
-        </div>
-
-    </header>
+<main>
     <div class="container">
             <div class ="profile">
             <div class="profile_container">
@@ -41,6 +42,25 @@
         </div>
         
     </div>
-    <script src="script.js"></script>
+        <div class="hidden-modal">
+        <div class="hidden-modal-content">
+            <p>Sådär, Nu är Easter egget korekt, Hotpink Disco Baby! <br>Style stulen från bootstrap, I have no shame : )</p>
+            <button class="close-popup-button">Close</button>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+            <div class="contact">
+                <h3 class="title">contact</h3>
+                    <div class="contact_info">
+                        <p class="description easteregg">Porthansvägen 12</p>
+                        <p class="description">0707254421</p>
+                        <p class="description">brormaximillianlundberg@protonmail.com</p>
+                    </div>
+            </div>
+            
+</footer>
+
 </body>
 </html>

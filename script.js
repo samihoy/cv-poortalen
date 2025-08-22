@@ -1,29 +1,6 @@
-console.log("Running script.js on ABOUT PAGE")
-let keySequence = '';
-  const secretCode = '1337';
-  const modal = document.getElementById('easterEggModal');
-  const closeButton = document.querySelector('.close');
-
-  document.addEventListener('keydown', function(event) {
-    keySequence += event.key;
-
-    keySequence = keySequence.slice(-secretCode.length);
-
-    if (keySequence === secretCode) {
-      modal.style.display = 'block';
-      keySequence = '';
-    }
-});
-
-  closeButton.addEventListener('click', function() {
-    modal.style.display = 'none';
-});
-
-  window.addEventListener('click', function(event) {
-    if (event.target === modal) {
-      modal.style.display = 'none';
-    }
-});
+//---------------------------------------------------------------------
+// Profile picture Easter egg
+//---------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
   const originalImg = "profile%20pic.jpg"; 
@@ -37,4 +14,46 @@ document.addEventListener("DOMContentLoaded", () => {
         : "./images/profile pic.jpg";
     });
   }
+});
+
+//----------------------------------------------------------------------
+//        Nya Easter egg ett, som ändrar backgrunden
+//----------------------------------------------------------------------
+
+const musicEasterEgg = document.getElementById('Background-easteregg');
+let isOriginalBackground = true;
+
+if (musicEasterEgg){
+  musicEasterEgg.addEventListener('click', () => {
+    if (isOriginalBackground) {
+      document.body.style.backgroundColor = 'hotpink';  //Aldors favorit här, kommer ihåg från frontend kursen ^^
+    } else {
+      document.body.style.backgroundColor = '';
+    }
+    isOriginalBackground = !isOriginalBackground;
+  });
+}
+
+//----------------------------------------------------------------------
+// Här är nya event listern, den är global för det var så den skulle vara eller hur?
+//jag tog inte bort det gammla påskäget, uttan la bara till ett nytt
+//----------------------------------------------------------------------
+
+let secretTypedKeys = '';
+const unlockCode = '1337';
+const popupElement = document.querySelector('.hidden-modal');
+const closeButtonElement = document.querySelector('.close-popup-button');
+
+document.addEventListener('keydown', function(event) {
+  secretTypedKeys += event.key;
+  secretTypedKeys = secretTypedKeys.slice(-unlockCode.length);
+
+  if (secretTypedKeys === unlockCode) {
+    popupElement.style.display = 'block';
+    secretTypedKeys = ''; 
+  }
+});
+
+closeButtonElement.addEventListener('click', function() {
+  popupElement.style.display = 'none';
 });
